@@ -7,6 +7,7 @@ async function getStoredPosts() {
   return storedPosts;
 }
 
+
 function storePosts(posts) {
   return fs.writeFile('posts.json', JSON.stringify({ posts: posts || [] }));
 }

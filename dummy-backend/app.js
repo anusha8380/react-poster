@@ -7,6 +7,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
+
 app.use((req, res, next) => {
   // Attach CORS headers
   // Required when using a detached backend (that runs on a different domain)
